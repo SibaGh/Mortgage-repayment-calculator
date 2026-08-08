@@ -1,0 +1,18 @@
+.resultsContainer{
+    background-color: var(--bg-results);
+    flex: 1;
+    /** height: 100%; لانو عم تسبب مشكلةضروري نحذف ***/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    /* إعطاء حافة منحنية مميزة لقسم النتائج من الأسفل يساراً كما في تصميم Frontend Mentor */
+    border-bottom-left-radius: 80px;
+}
+
+@media (max-width: 768px) {
+    .resultsContainer {
+        border-bottom-left-radius: 0;
+        padding: 32px 24px;
+    }
+}

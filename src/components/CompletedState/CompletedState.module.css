@@ -1,0 +1,25 @@
+.completedState{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+}
+
+.yourResult{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.yourResult h3{
+    color: var(--text-inverse);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.yourResult p{
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 600;
+}

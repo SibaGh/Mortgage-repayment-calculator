@@ -1,0 +1,37 @@
+.submitButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    background-color: var(--color-accent);
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content; /* لكي لا يمتد الزر للسطر كامل بل على قدر محتواه */
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.submitButton:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.calculatorIcon{
+    width: 18px;
+    height: 18px;
+}
+
+.submitButton span{
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* على الشاشات الصغيرة يفضل أن يكون الزر بعرض كامل */
+@media (max-width: 600px) {
+    .submitButton {
+        width: 100%;
+    }
+}

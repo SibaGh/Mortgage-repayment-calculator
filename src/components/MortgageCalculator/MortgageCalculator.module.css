@@ -1,0 +1,22 @@
+.mortgageCalculator{
+    width: 100%;
+    max-width: 980px; /* زيادة العرض ليتسع القسمين ببراح */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* تجبر الجانبين (Form & Results) على المساواة في الارتفاع */
+    /****التعليمة السابقة هاااامة جداااااا***/
+    border-radius: 24px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* لمنع خروج العناصر الفرعية عن الزوايا المدورة */ 
+    background-color: var(--bg-card);
+}
+
+
+/* التحول إلى الترتيب العمودي على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .mortgageCalculator {
+        flex-direction: column;
+        border-radius: 0; /* تحويله لكرت كامل في الهواتف إن أردتِ أو إبقاء زوايا خفيفة */
+    }
+}

@@ -1,0 +1,68 @@
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.inputWrapper{
+    display: flex;
+    align-items: stretch; /* تجبر unit و input على أخذ نفس الارتفاع 100% */
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    overflow: hidden; /* يمنع بروز خلفية unit خارج الحواف المدورة */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.inputWrapper:hover {
+    border-color: var(--text-main);
+}
+
+.input{
+    flex: 1; /* يمتد ليشغل كل المساحة المتبقية داخل الـ wrapper */
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-main);
+    width: 100%;
+}
+
+.unit{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+    background-color: var(--bg-app); /* لون رمادي فاتح للخلفية كالتصميم */
+    padding: 0 16px; /* بادينغ يمين ويسار فقط، والارتفاع يمتد تلقائياً */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* عند وجود خطأ: يتغير إطار الحاوية للأحمر */
+.inputWrapper.error {
+    border-color: #d73333;
+}
+
+/* عند وجود خطأ: تتغير خلفية الـ unit للأحمر ولون النص للأبيض */
+.inputWrapper.error .unit {
+    background-color: #d73333;
+    color: #ffffff;
+}
+
+/* تنسيق النص التنبيهي تحت الحقل */
+.errorMessage {
+    color: #d73333;
+    font-size: 12px;
+    margin-top: 6px;
+    display: block;
+}

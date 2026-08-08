@@ -1,0 +1,31 @@
+.calculatorForm{
+    flex: 1;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* يجعل حقول الصف تنزل تحت بعضها في الهواتف */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: stretch; /***مشان ياخد حقل الادخال كامل العرض***/
+    }
+    .calculatorForm {
+        padding: 24px;
+    }
+}

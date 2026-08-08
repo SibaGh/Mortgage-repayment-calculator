@@ -1,0 +1,79 @@
+.radioGroup{
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.legend{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.radioLabel:hover {
+    border-color: var(--border-focus);
+}
+
+/* عندما يكون الـ radio محدداً، نغير خلفية وإطار الـ label كالتصميم */
+.radioLabel:has(.radioInput:checked) {
+    border-color: var(--border-focus);
+    background-color: rgba(216, 219, 23, 0.1); /* لون فاتح جداً خلف الخيار المحدد */
+}
+
+.radioInput {
+    -webkit-appearance: none;
+    appearance: none; /* إخفاء شكل الـ radio الافتراضي البشع للمتصفح */
+    
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--text-muted);
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* شكل النقطة الملونة الداخلية عند الاختيار */
+.radioInput:checked {
+    border-color: var(--color-accent);
+}
+
+.radioInput:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+
+
+
+
+.errorMessage {
+    color: #d73333;
+    font-size: 12px;
+    margin-top: 6px;
+    display: block;
+}

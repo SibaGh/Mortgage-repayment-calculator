@@ -1,0 +1,43 @@
+.resultCard{
+    background-color: var(--clr-neutral-slate-1000);
+    border-radius: 8px;
+    padding: 32px 24px;
+    width: 100%;
+    /* الشريط الملون المميز أعلى الكارت في التصميم */
+    border-top: 4px solid var(--color-accent);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.monthlySection{
+    padding-bottom: 24px;
+    /* خط الفاصل بدرجة شفافية خفيفة حتى لا يكون حاداً */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.monthlyRepayments{
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.monthlyNumber{
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 48px; /* تكبير الخط ليكون بارزاً كالتصميم الرئيسي */
+    line-height: 1.2;
+}
+
+.totalSection{
+    padding-top: 20px;
+}
+.totalRepayments{
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.totalNumber{
+    color: var(--text-inverse);
+    font-weight: 700;
+    font-size: 24px;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+
+:root {
+  /* =========================================
+    1. Primitive Color Tokens (القيم الخام)
+     ========================================= */
+  --clr-primary-lime: hsl(61, 70%, 52%);
+  --clr-primary-red: hsl(4, 69%, 50%);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-slate-100: hsl(202, 86%, 94%);
+  --clr-neutral-slate-300: hsl(203, 41%, 72%);
+  --clr-neutral-slate-500: hsl(200, 26%, 54%);
+  --clr-neutral-slate-700: hsl(200, 24%, 40%);
+  --clr-neutral-slate-900: hsl(202, 55%, 16%);
+  --clr-neutral-slate-1000: hsl(200, 51%, 13%);
+
+  /* =========================================
+    2. Semantic Tokens (الأداء والدلالة)
+     ========================================= */
+  /* Main Backgrounds */
+  --bg-app: var(--clr-neutral-slate-100);
+  --bg-card: var(--clr-neutral-white);
+  --bg-results: var(--clr-neutral-slate-900);
+  /* --result-card: var(--clr-neutral-slate-1000) */
+
+  /* Primary Accent & Action Elements */
+  --color-accent: var(--clr-primary-lime);
+  --color-accent-hover: hsl(61, 70%, 65%); /* درجة أفتح قليلاً للـ Hover */
+
+  /* Text Colors */
+  --text-main: var(--clr-neutral-slate-900);
+  --text-muted: var(--clr-neutral-slate-500);
+  --text-inverse: var(--clr-neutral-white);
+
+  /* Form Elements & Borders */
+  --border-default: var(--clr-neutral-slate-300);
+  --border-focus: var(--clr-primary-lime);
+  
+  /* Validation & Errors */
+  --color-error: var(--clr-primary-red);
+}
+
+
+
+
+/* :root {
+
+  --color-primary-lime: hsl(61, 70%, 52%);
+  --color-primary-red: hsl(4, 69%, 50%);
+
+
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-slate-100: hsl(202, 86%, 94%);
+  --color-slate-300: hsl(203, 41%, 72%);
+  --color-slate-500: hsl(200, 26%, 54%);
+  --color-slate-700: hsl(200, 24%, 40%);
+  --color-slate-900: hsl(202, 55%, 16%);
+} */
+
